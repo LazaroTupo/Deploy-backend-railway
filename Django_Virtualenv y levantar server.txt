@@ -1,0 +1,18 @@
+# Instalar y activar el entorno virtual
+
+pip install virtualenv
+virtualenv venv
+
+#Para activar el entorno virtual (NO USAR POWERSHELL, cambiar consola al cmd)
+./venv/Scripts/activate
+.\venv\Scripts\activate
+
+# Una vez dentro del entorno virtual, instalas lo demás:
+
+pip install django django-filter djangorestframework gunicorn Markdown coreapi django-cors-headers
+
+python manage.py runserver
+
+#Para desactivar el entorno virtual:
+./venv/Scripts/deactivate
+.\venv\Scripts\deactivate
