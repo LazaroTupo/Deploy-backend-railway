@@ -82,7 +82,7 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASE_URL = 'postgres://postgres:6D63aA3gAd32*CgGbfDDB51GeFcC-6AD@viaduct.proxy.rlwy.net:42126/railway'
+# DATABASE_URL = 'postgres://postgres:6D63aA3gAd32*CgGbfDDB51GeFcC-6AD@viaduct.proxy.rlwy.net:42126/railway'
 
 # DATABASES = {
 #     'default': {
@@ -92,7 +92,7 @@ DATABASE_URL = 'postgres://postgres:6D63aA3gAd32*CgGbfDDB51GeFcC-6AD@viaduct.pro
 # }
 
 DATABASES = {
-    'default': dj_database_url.config(default=DATABASE_URL)
+    'default': dj_database_url.config(default='postgres://postgres:6D63aA3gAd32*CgGbfDDB51GeFcC-6AD@viaduct.proxy.rlwy.net:42126/railway')
 }
 
 # Password validation
