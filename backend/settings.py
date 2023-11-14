@@ -92,7 +92,7 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # }
 
 DATABASES = {
-    'default': dj_database_url.config(default='postgres://postgres:6D63aA3gAd32*CgGbfDDB51GeFcC-6AD@viaduct.proxy.rlwy.net:42126/railway')
+    'default': dj_database_url.config(default=os.getenv('DATABASE_URL'))
 }
 
 # Password validation
