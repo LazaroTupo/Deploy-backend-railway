@@ -149,6 +149,15 @@ CORS_ALLOWED_ORIGINS = [
     'railway-frontend-production-e20f.up.railway.app'
 ]
 
+CORS_ALLOW_METHODS = [
+    'DELETE',
+    'GET',
+    'OPTIONS',  # Include OPTIONS here
+    'PATCH',
+    'POST',
+    'PUT',
+]
+
 REST_FRAMEWORK = {
     'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema',
 }
