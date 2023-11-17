@@ -145,8 +145,8 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:5173',
-    'https://railway-frontend-production-cf8e.up.railway.app'
+    'https://railway-frontend-production-cf8e.up.railway.app',
+    'http://stunning-baklava-dc64df.netlify.app'
 ]
 
 REST_FRAMEWORK = {
